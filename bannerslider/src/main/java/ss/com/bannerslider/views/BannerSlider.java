@@ -178,6 +178,7 @@ public class BannerSlider extends FrameLayout implements ViewPager.OnPageChangeL
             } else {
                 bannerAdapter = new BannerAdapter(hostActivity.getSupportFragmentManager(), mustLoopSlides, banners);
             }
+            bannerAdapter.setEmptyView(emptyView);
 
             viewPager.setAdapter(bannerAdapter);
 
